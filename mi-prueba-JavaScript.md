@@ -244,8 +244,6 @@ if (tipoDeSuscripcion === "ExpertPlus") {
 Puedes replicar este comportamiento utilizando un objeto que contenga los mensajes correspondientes a cada tipo de suscripción. Aquí tienes cómo hacerlo:
 
 ```javascript
-const tipoDeSuscripcion = "Basic";
-
 const mensajes = {
     "Free": "Solo puedes tomar los cursos gratis",
     "Basic": "Puedes tomar casi todos los cursos de Platzi durante un mes",
@@ -253,16 +251,18 @@ const mensajes = {
     "ExpertPlus": "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
 };
 
-if (mensajes[tipoDeSuscripcion]) {
+function tuSuscripcion(tipoDeSuscripcion) {
+    if (mensajes[tipoDeSuscripcion]) {
     console.log(mensajes[tipoDeSuscripcion]);
-} else {
+    } else {
     console.log("Tipo de suscripción desconocido");
-}
+    }
+};
 ```
 
 En este ejemplo, el objeto `mensajes` contiene las respuestas correspondientes a cada tipo de suscripción. 
 
-Luego, el condicional verifica si el tipo de suscripción existe en el objeto y muestra el mensaje apropiado. Si el tipo de suscripción no se encuentra en el objeto, se muestra el mensaje *"Tipo de suscripción desconocido"*.
+Una vez creada la función, en este caso es `tuSuscripcion`,  el condicional verifica si el tipo de suscripción existe en el objeto y muestra el mensaje apropiado. Si el tipo de suscripción no se encuentra en el objeto, se muestra el mensaje *"Tipo de suscripción desconocido"*.
 
 Ciclos
 --
@@ -301,7 +301,7 @@ Ciclos
 - ¿Puedo mezclar ciclos y condicionales?
   - Sí, definitivamente puedes mezclar ciclos y condicionales en la programación. De hecho, la combinación de ciclos (bucles) y estructuras condicionales (como declaraciones ``if``) es una práctica común y poderosa para crear programas más flexibles y capaces de manejar diferentes situaciones
 
-1. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+2. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
 ```javascript
 for (let i = 0; i < 5; i++) {
