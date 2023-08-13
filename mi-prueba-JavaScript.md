@@ -87,7 +87,7 @@ Variables y operaciones
    - Dinero ahorrado ---> _*`Number`*_
    - Deudas ---> _*`Number`*_
 
-3. ### Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+2. ### Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
     #### 👨‍💻 _Pasamos todo a código_:
 
@@ -101,7 +101,7 @@ Variables y operaciones
     var ahorro = 60000;
     var deudas = 50000;
    ```
-4. ### Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+3. ### Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 - Nombre completo (nombre y apellido)
     ```javascript
@@ -301,7 +301,7 @@ Ciclos
 - ¿Puedo mezclar ciclos y condicionales?
   - Sí, definitivamente puedes mezclar ciclos y condicionales en la programación. De hecho, la combinación de ciclos (bucles) y estructuras condicionales (como declaraciones ``if``) es una práctica común y poderosa para crear programas más flexibles y capaces de manejar diferentes situaciones
 
-2. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+1. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
 ```javascript
 for (let i = 0; i < 5; i++) {
