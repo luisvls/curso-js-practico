@@ -76,16 +76,16 @@ Variables y operaciones
 - ¿Cuál operador me permite sumar o concatenar?
   - El operador **`+`** nos permite sumar, como así tambíen concatenar. 
 
-1. ### Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+2. ### Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-- Nombre ---> _*`String`*_
-- Apellido ---> _*`String`*_
-- Nombre de usuario en Platzi ---> _*`String`*_
-- Edad ---> _*`Number`*_
-- Correo electrónico ---> _*`String`*_
-- Mayor de edad ---> _*`Boolean`*_
-- Dinero ahorrado ---> _*`Number`*_
-- Deudas ---> _*`Number`*_
+   - Nombre ---> _*`String`*_
+   - Apellido ---> _*`String`*_
+   - Nombre de usuario en Platzi ---> _*`String`*_
+   - Edad ---> _*`Number`*_
+   - Correo electrónico ---> _*`String`*_
+   - Mayor de edad ---> _*`Boolean`*_
+   - Dinero ahorrado ---> _*`Number`*_
+   - Deudas ---> _*`Number`*_
 
 3. ### Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
@@ -129,36 +129,36 @@ Funciones
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
   - Los **parámetros** son los `nombres` que aparecen en la definición de una función. Por su parte, los **argumentos** son los `valores` que le pasamos (y que, por tanto, recibe) una función.
 
-1. ### Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+2. ### Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
-```javascript
-const name = "Luis Alfredo";
-const lastname = "Suarez";
-const completeName = name + lastname;
-const nickname = "luisvls";
+    ```javascript
+    const name = "Luis Alfredo";
+    const lastname = "Suarez";
+    const completeName = name + lastname;
+    const nickname = "luisvls";
 
-console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 
-```
----
-- [x] Muy bien, pasemos esto a código. 👨‍💻
+    ```
+    ---
+    - [x] Muy bien, pasemos esto a código. 👨‍💻
 
-```javascript
-function generarSaludo(nombre, apellido, usuario) {
-    const nombreCompleto = nombre + " " + apellido;
-    return "Mi nombre es " + nombreCompleto + ", pero prefiero que me digas " + usuario + ".";
-}
+    ```javascript
+    function generarSaludo(nombre, apellido, usuario) {
+        const nombreCompleto = nombre + " " + apellido;
+        return "Mi nombre es " + nombreCompleto + ", pero prefiero que me digas " + usuario + ".";
+    }
 
-const nombre = "Luis Alfredo";
-const apellido = "Suarez";
-const usuario = "luisvls";
+    const nombre = "Luis Alfredo";
+    const apellido = "Suarez";
+    const usuario = "luisvls";
 
-const saludo = generarSaludo(nombre, apellido, usuario);
-console.log(saludo);
-```
-En esta versión de la función `generarSaludo`, los *parámetros* **nombre**, **apellido** y **usuario** se utilizan para construir el mensaje de `saludo`. 
+    const saludo = generarSaludo(nombre, apellido, usuario);
+    console.log(saludo);
+    ```
+    En esta versión de la función `generarSaludo`, los *parámetros* **nombre**, **apellido** y **usuario** se utilizan para construir el mensaje de *saludo*. 
 
-Luego, se llama a la función con los valores correspondientes para esos parámetros y se almacena el resultado en la variable *saludo*, que finalmente se imprime en la consola.
+    Luego, se llama a la función con los valores correspondientes para esos parámetros y se almacena el resultado en la variable `saludo`, que finalmente se imprime en la consola.
 
 Condicionales
 --
@@ -167,14 +167,14 @@ Condicionales
 - ¿Qué es un condicional?
   - Las condicionales en programas son grupos de sentencias o sentencias individuales que te permiten condicionar la decisión entre la elección de una opción y otra.
 
-    Un ejemplo de una condición en un lenguaje natural puede ser: si utilizas Python, puedes [o no] utilizar JavaScript.
+    Un ejemplo de una condición en un lenguaje natural puede ser: si utilizas Python, puedes (o no) utilizar JavaScript.
 
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
-  - JavaScript ofrece un total de cuatro instrucciones para procesar código de acuerdo con condiciones determinadas por el programador: ``if``, ``switch``, ``for`` y ``while``.
+  - JavaScript ofrece un total de cuatro instrucciones para procesar código de acuerdo con condiciones determinadas por el programador: `if`, `switch`, `for` y `while`.
 - ¿Puedo combinar funciones y condicionales?
   - Sí podemos combinar funciones y condicionales. 
 
-    Para combinar condiciones y crear condiciones complejas podemos emplear los siguientes operadores lógicos: ``!`` (negación), ``&&`` (y) y ``||`` (o).
+    Para combinar condiciones y crear condiciones complejas podemos emplear los siguientes operadores lógicos: `!` (negación), `&&` (y) y `||` (o).
 
 2. ### Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
@@ -218,7 +218,7 @@ Este código utiliza una serie de condiciones `if`, `else if` y un `else` para r
 
 3. ### Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
->💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional.
+>💡 Bonus: si ya eres un expert@ en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional.
 
   #### Aquí tienes la replicación del comportamiento utilizando únicamente la estructura `if`:
 
@@ -262,7 +262,7 @@ if (mensajes[tipoDeSuscripcion]) {
 
 En este ejemplo, el objeto `mensajes` contiene las respuestas correspondientes a cada tipo de suscripción. 
 
-Luego, el condicional verifica si el tipo de suscripción existe en el objeto y muestra el mensaje apropiado. Si el tipo de suscripción no se encuentra en el objeto, se muestra el mensaje "Tipo de suscripción desconocido".
+Luego, el condicional verifica si el tipo de suscripción existe en el objeto y muestra el mensaje apropiado. Si el tipo de suscripción no se encuentra en el objeto, se muestra el mensaje *"Tipo de suscripción desconocido"*.
 
 Ciclos
 --
@@ -294,7 +294,7 @@ Ciclos
         ```
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
-  - ♾ Un ciclo infinito es un tipo de bucle en programación que se ejecuta continuamente sin llegar a una condición de finalización. 
+  -  Un ciclo infinito (♾) es un tipo de bucle en programación que se ejecuta continuamente sin llegar a una condición de finalización. 
   En otras palabras, el bloque de código dentro del ciclo se repite una y otra vez sin detenerse.
 
   - Esto puede ser un *problema grave* en la programación, ya que puede llevar a un consumo excesivo de recursos del sistema y hacer que el programa se quede atascado sin producir ningún resultado útil.
@@ -339,8 +339,8 @@ La variable `i` se incrementa en el primer caso y se decrementa en el segundo ca
 3. ### Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
 >💡 Pista: puedes usar la función prompt de JavaScript.
-
-- Aquí tienes un ejemplo de código en JavaScript que realiza la tarea que describes:
+---
+Aquí tienes un ejemplo de código en JavaScript:
 
 ```javascript
 while (true) {
@@ -374,7 +374,7 @@ Listas
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
   - **Mezcla de Arrays y Objetos**: Sí, puedes mezclar arrays con objetos. Por ejemplo, puedes tener un array que contenga objetos como elementos. También puedes tener propiedades de objeto que contengan arrays. Esto puede ser útil para modelar estructuras de datos más complejas y jerárquicas.
 
-1. ### Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+2. ### Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
 Aquí tienes un ejemplo de una función en JavaScript que recibe cualquier array como parámetro e imprime su primer elemento:
 
@@ -402,7 +402,7 @@ Esta función `imprimirPrimerElemento` toma un array como parámetro, verifica s
 
 Si el array está vacío, muestra un mensaje correspondiente.
 
-1. ### Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+3. ### Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
 Aquí tienes una función en JavaScript que recibe un array como parámetro y luego imprime todos sus elementos uno por uno:
 
@@ -420,7 +420,7 @@ imprimirElementos(miArray);
 
 Esta función recorre cada elemento del array y lo imprime uno por uno en la consola. Puedes probarla con diferentes arrays pasándolos como argumento a la función `imprimirElementos`.
 
-2. ### Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+4. ### Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
 Aquí tienes una función en JavaScript que recibe un objeto como parámetro y luego imprime todos sus elementos uno por uno de una manera simple:
 
@@ -449,15 +449,20 @@ Esta función utiliza un bucle `for...in` para recorrer las claves (propiedades)
 
 He creado este "comentario", es casí un tutorial, en base a lo que fuimos aprendiendo en cursos anteriores y demás artículos que han proporcionado los estudiantes mismos.
 
-Quiero aclarar que para explicar de formas más detalladas algunas funciones y demás cosas. Me he apoyado de diversas fuentes y he testeado todo en la consola.
+Quiero aclarar que para explicar de forma más detallada algunas funciones y demás cosas, he utilizado diversas fuentes, además de pasar todo por un corrector ortográfico.
 
-> 👀 *Aun así, soy un ser humano y puede haber algo mal, ¡coméntenlo!*
 
-Aunque me este gustando esto de programar y le meto muchas ganas. No puedo atribuirme todo el código que les comparto, algo así como 65/35 de todo lo que ven lo pase a código yo mismo. Para esta altura del curso, me siento conforme.
+> 👀 *Aun así, soy un ser humano y puede haber algo mal, ¡coméntenlo por favor!*
 
-La otra parte es de `blogs`, `San Google`, `foros nerds`, `IA`, etc.
+Aunque voy agarrando el gusto a esto de programar y le meto muchas ganas al estudio. No puedo atribuirme todo el código que les comparto, algo así como 65/35 de todo lo que ven lo pase a código yo mismo. Para esta altura del curso, me siento conforme con lo aprendido.
 
-Si bien llegué a los mismo resultados en todas las preguntas, algunas funciones que he utilizado daban un par de instrucciones demás. Me resultaba algo incomodo pasarles algo así, por ende, me tomé el trabajo de realizar este mini tutorial.
+La otra parte de la información y redacción es de `blogs`, `San Google`, `foros nerds`, `IA`, etc.
+
+Si bien llegué a los mismos resultados en todas las preguntas del test, algunas funciones que he utilizado daban un par de vueltas por encima de lo necesario.
+
+Me resultaba algo incomodo pasarles algo así, por ende, me tomé el trabajo de realizar este mini tutorial con código más simplificado y eficiente.
+
+Si te ha gustado este trabajo, dale un like en Platzi y al repo. Así puede ser de utilidad para otros.
 
 ---
 Ahora bien, sigamos aprendiendo. Animos, hay que esforzarse para llegar lejos. 💪
