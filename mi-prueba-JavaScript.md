@@ -78,16 +78,16 @@ Variables y operaciones
 
 1. ### Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-- Nombre ---> _*`String`*_
-- Apellido ---> _*`String`*_
-- Nombre de usuario en Platzi ---> _*`String`*_
-- Edad ---> _*`Number`*_
-- Correo electrónico ---> _*`String`*_
-- Mayor de edad ---> _*`Boolean`*_
-- Dinero ahorrado ---> _*`Number`*_
-- Deudas ---> _*`Number`*_
+   - Nombre ---> _*`String`*_
+   - Apellido ---> _*`String`*_
+   - Nombre de usuario en Platzi ---> _*`String`*_
+   - Edad ---> _*`Number`*_
+   - Correo electrónico ---> _*`String`*_
+   - Mayor de edad ---> _*`Boolean`*_
+   - Dinero ahorrado ---> _*`Number`*_
+   - Deudas ---> _*`Number`*_
 
-3. ### Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+2. ### Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
     #### 👨‍💻 _Pasamos todo a código_:
 
@@ -101,7 +101,7 @@ Variables y operaciones
     var ahorro = 60000;
     var deudas = 50000;
    ```
-4. ### Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+3. ### Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 - Nombre completo (nombre y apellido)
     ```javascript
@@ -131,34 +131,34 @@ Funciones
 
 1. ### Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
-```javascript
-const name = "Luis Alfredo";
-const lastname = "Suarez";
-const completeName = name + lastname;
-const nickname = "luisvls";
+    ```javascript
+    const name = "Luis Alfredo";
+    const lastname = "Suarez";
+    const completeName = name + lastname;
+    const nickname = "luisvls";
 
-console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 
-```
----
-- [x] Muy bien, pasemos esto a código. 👨‍💻
+    ```
+    ---
+    - [x] Muy bien, pasemos esto a código. 👨‍💻
 
-```javascript
-function generarSaludo(nombre, apellido, usuario) {
-    const nombreCompleto = nombre + " " + apellido;
-    return "Mi nombre es " + nombreCompleto + ", pero prefiero que me digas " + usuario + ".";
-}
+    ```javascript
+    function generarSaludo(nombre, apellido, usuario) {
+        const nombreCompleto = nombre + " " + apellido;
+        return "Mi nombre es " + nombreCompleto + ", pero prefiero que me digas " + usuario + ".";
+    }
 
-const nombre = "Luis Alfredo";
-const apellido = "Suarez";
-const usuario = "luisvls";
+    const nombre = "Luis Alfredo";
+    const apellido = "Suarez";
+    const usuario = "luisvls";
 
-const saludo = generarSaludo(nombre, apellido, usuario);
-console.log(saludo);
-```
-En esta versión de la función `generarSaludo`, los *parámetros* **nombre**, **apellido** y **usuario** se utilizan para construir el mensaje de `saludo`. 
+    const saludo = generarSaludo(nombre, apellido, usuario);
+    console.log(saludo);
+    ```
+    En esta versión de la función `generarSaludo`, los *parámetros* **nombre**, **apellido** y **usuario** se utilizan para construir el mensaje de *saludo*. 
 
-Luego, se llama a la función con los valores correspondientes para esos parámetros y se almacena el resultado en la variable *saludo*, que finalmente se imprime en la consola.
+    Luego, se llama a la función con los valores correspondientes para esos parámetros y se almacena el resultado en la variable `saludo`, que finalmente se imprime en la consola.
 
 Condicionales
 --
@@ -167,14 +167,14 @@ Condicionales
 - ¿Qué es un condicional?
   - Las condicionales en programas son grupos de sentencias o sentencias individuales que te permiten condicionar la decisión entre la elección de una opción y otra.
 
-    Un ejemplo de una condición en un lenguaje natural puede ser: si utilizas Python, puedes [o no] utilizar JavaScript.
+    Un ejemplo de una condición en un lenguaje natural puede ser: si utilizas Python, puedes (o no) utilizar JavaScript.
 
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
-  - JavaScript ofrece un total de cuatro instrucciones para procesar código de acuerdo con condiciones determinadas por el programador: ``if``, ``switch``, ``for`` y ``while``.
+  - JavaScript ofrece un total de cuatro instrucciones para procesar código de acuerdo con condiciones determinadas por el programador: `if`, `switch`, `for` y `while`.
 - ¿Puedo combinar funciones y condicionales?
   - Sí podemos combinar funciones y condicionales. 
 
-    Para combinar condiciones y crear condiciones complejas podemos emplear los siguientes operadores lógicos: ``!`` (negación), ``&&`` (y) y ``||`` (o).
+    Para combinar condiciones y crear condiciones complejas podemos emplear los siguientes operadores lógicos: `!` (negación), `&&` (y) y `||` (o).
 
 2. ### Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
@@ -218,7 +218,7 @@ Este código utiliza una serie de condiciones `if`, `else if` y un `else` para r
 
 3. ### Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
->💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional.
+>💡 Bonus: si ya eres un expert@ en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional.
 
   #### Aquí tienes la replicación del comportamiento utilizando únicamente la estructura `if`:
 
@@ -262,7 +262,7 @@ if (mensajes[tipoDeSuscripcion]) {
 
 En este ejemplo, el objeto `mensajes` contiene las respuestas correspondientes a cada tipo de suscripción. 
 
-Luego, el condicional verifica si el tipo de suscripción existe en el objeto y muestra el mensaje apropiado. Si el tipo de suscripción no se encuentra en el objeto, se muestra el mensaje "Tipo de suscripción desconocido".
+Luego, el condicional verifica si el tipo de suscripción existe en el objeto y muestra el mensaje apropiado. Si el tipo de suscripción no se encuentra en el objeto, se muestra el mensaje *"Tipo de suscripción desconocido"*.
 
 Ciclos
 --
@@ -294,14 +294,14 @@ Ciclos
         ```
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
-  - ♾ Un ciclo infinito es un tipo de bucle en programación que se ejecuta continuamente sin llegar a una condición de finalización. 
+  -  Un ciclo infinito (♾) es un tipo de bucle en programación que se ejecuta continuamente sin llegar a una condición de finalización. 
   En otras palabras, el bloque de código dentro del ciclo se repite una y otra vez sin detenerse.
 
   - Esto puede ser un *problema grave* en la programación, ya que puede llevar a un consumo excesivo de recursos del sistema y hacer que el programa se quede atascado sin producir ningún resultado útil.
 - ¿Puedo mezclar ciclos y condicionales?
   - Sí, definitivamente puedes mezclar ciclos y condicionales en la programación. De hecho, la combinación de ciclos (bucles) y estructuras condicionales (como declaraciones ``if``) es una práctica común y poderosa para crear programas más flexibles y capaces de manejar diferentes situaciones
 
-2. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+1. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
 ```javascript
 for (let i = 0; i < 5; i++) {
@@ -339,8 +339,8 @@ La variable `i` se incrementa en el primer caso y se decrementa en el segundo ca
 3. ### Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
 >💡 Pista: puedes usar la función prompt de JavaScript.
-
-- Aquí tienes un ejemplo de código en JavaScript que realiza la tarea que describes:
+---
+Aquí tienes un ejemplo de código en JavaScript:
 
 ```javascript
 while (true) {
@@ -449,15 +449,20 @@ Esta función utiliza un bucle `for...in` para recorrer las claves (propiedades)
 
 He creado este "comentario", es casí un tutorial, en base a lo que fuimos aprendiendo en cursos anteriores y demás artículos que han proporcionado los estudiantes mismos.
 
-Quiero aclarar que para explicar de formas más detalladas algunas funciones y demás cosas. Me he apoyado de diversas fuentes y he testeado todo en la consola.
+Quiero aclarar que para explicar de forma más detallada algunas funciones y demás cosas, he utilizado diversas fuentes, además de pasar todo por un corrector ortográfico.
 
-> 👀 *Aun así, soy un ser humano y puede haber algo mal, ¡coméntenlo!*
 
-Aunque me este gustando esto de programar y le meto muchas ganas. No puedo atribuirme todo el código que les comparto, algo así como 65/35 de todo lo que ven lo pase a código yo mismo. Para esta altura del curso, me siento conforme.
+> 👀 *Aun así, soy un ser humano y puede haber algo mal, ¡coméntenlo por favor!*
 
-La otra parte es de `blogs`, `San Google`, `foros nerds`, `IA`, etc.
+Aunque voy agarrando el gusto a esto de programar y le meto muchas ganas al estudio. No puedo atribuirme todo el código que les comparto, algo así como 65/35 de todo lo que ven lo pase a código yo mismo. Para esta altura del curso, me siento conforme con lo aprendido.
 
-Si bien llegué a los mismo resultados en todas las preguntas, algunas funciones que he utilizado daban un par de instrucciones demás. Me resultaba algo incomodo pasarles algo así, por ende, me tomé el trabajo de realizar este mini tutorial.
+La otra parte de la información y redacción es de `blogs`, `San Google`, `foros nerds`, `IA`, etc.
+
+Si bien llegué a los mismos resultados en todas las preguntas del test, algunas funciones que he utilizado daban un par de vueltas por encima de lo necesario.
+
+Me resultaba algo incomodo pasarles algo así, por ende, me tomé el trabajo de realizar este mini tutorial con código más simplificado y eficiente.
+
+Si te ha gustado este trabajo, dale un like en Platzi y al repo. Así puede ser de utilidad para otros.
 
 ---
 Ahora bien, sigamos aprendiendo. Animos, hay que esforzarse para llegar lejos. 💪
