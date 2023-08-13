@@ -301,7 +301,7 @@ Ciclos
 - ¿Puedo mezclar ciclos y condicionales?
   - Sí, definitivamente puedes mezclar ciclos y condicionales en la programación. De hecho, la combinación de ciclos (bucles) y estructuras condicionales (como declaraciones ``if``) es una práctica común y poderosa para crear programas más flexibles y capaces de manejar diferentes situaciones
 
-1. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+2. ### Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
 ```javascript
 for (let i = 0; i < 5; i++) {
